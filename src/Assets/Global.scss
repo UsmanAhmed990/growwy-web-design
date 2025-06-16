@@ -1,0 +1,15 @@
+//________________________ Mixins__________________
+@mixin flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin smallfont{
+    font-size: 12px;
+    font-family: "Inter";
+    font-weight: 400;
+}
+//__________________________ Variables________________________
+$primary-color:'';
+$secondary-color:'';
+$font-family:'Inter';
