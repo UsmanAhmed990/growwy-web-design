@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/growwy-web-design/static/css/main.df7b785e.css",
+    "main.js": "/growwy-web-design/static/js/main.44fed16c.js",
+    "static/js/453.e31f870f.chunk.js": "/growwy-web-design/static/js/453.e31f870f.chunk.js",
+    "static/media/Rabdom.pdf": "/growwy-web-design/static/media/Rabdom.bbf899dad6280034f23e.pdf",
+    "static/media/header.jpg": "/growwy-web-design/static/media/header.6c4e8930c9753a980999.jpg",
+    "static/media/mine2.jpg": "/growwy-web-design/static/media/mine2.40e9d727057920970a87.jpg",
+    "index.html": "/growwy-web-design/index.html",
+    "main.df7b785e.css.map": "/growwy-web-design/static/css/main.df7b785e.css.map",
+    "main.44fed16c.js.map": "/growwy-web-design/static/js/main.44fed16c.js.map",
+    "453.e31f870f.chunk.js.map": "/growwy-web-design/static/js/453.e31f870f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.df7b785e.css",
+    "static/js/main.44fed16c.js"
+  ]
+}
