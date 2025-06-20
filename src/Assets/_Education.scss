@@ -1,0 +1,123 @@
+
+
+
+.heading-wrapper {
+    margin-top: 20px;
+  text-align: center !important;
+  display: flex;
+  justify-content: center;
+
+  @media (max-width: 767px) and (min-width:320px) {
+      margin-bottom: 0px !important;
+      }
+
+  @media screen and (max-width:991px) and (min-width:768px){
+   margin: 0 !important;
+  }
+}
+
+
+
+.span-p2 {
+  font-size: 52px;
+  font-weight: 700;
+  font-family: "Poppins" !important;
+  color: white;
+  line-height: 72px;
+  display: inline-block;   
+  position: relative;    
+
+  @media (max-width: 767px) and (min-width:320px) {
+     font-size: 30px !important;
+     margin: 0 !important;
+      }
+
+  @media screen and (max-width:991px) and (min-width:768px){
+    font-size: 40px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 0;               
+    height: 3px;
+    width: 0;          
+    background: #ffbd39;;
+    transition: width 0.80s ease-out;
+  }
+  &:hover::before {
+    width: 100%;        
+  }
+}
+
+
+//________________________________ cards section_________________________
+
+.cont {
+    margin-top: 60px;
+  width: 240px;
+  min-height: 250px;
+  display: flex;
+  justify-content: center;
+  perspective: 900px;
+
+  @media (max-width: 767px) and (min-width:320px) {
+      margin-top: 30px;
+      }
+  
+}
+
+.car{
+  height: 100%;
+  width: 100%;
+  background-color: aliceblue;
+  position: relative;
+  transition: transform 1500ms;
+  transform-style: preserve-3d;
+  border-radius: 2rem;
+}
+
+.cont:hover > .car {
+  cursor: pointer;
+  transform: rotateY(180deg) rotateZ(180deg);
+}
+
+.front, .back {
+  height: 100%;
+  width: 100%;
+  border-radius: 2rem;
+  position: absolute;
+  backface-visibility: hidden;
+  color:#ffbd39;
+ background-color: black;
+}
+.chota-p{
+ font-size: 18px;
+ letter-spacing: 1.4px;
+}
+.chota{
+    font-size: 15px;
+    padding: 12px;
+}
+
+.front, .back {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  font-size: 20px;
+  padding: 10px;
+}
+
+.back {
+  transform: rotateY(180deg) rotateZ(180deg);
+}
+
+.back-heading, .front-heading {
+  font-size: 28px;
+  font-family: 'Poppins';
+  font-weight: bold;
+}
+

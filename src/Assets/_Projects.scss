@@ -1,0 +1,94 @@
+
+
+
+
+
+
+
+
+
+
+
+
+//_____________________________________ Section of Exp________________________________
+
+
+.box{
+    margin-top: 60px;
+    min-height: 300px;
+    width: 100%;
+    color: white;
+   background-color: rgba(255, 255, 255, 0.1);
+   transition: 0.5s all ease;
+
+   @media (max-width: 767px) and (min-width:320px) {
+    margin-top: 18px !important;
+      }
+
+   @media screen and (max-width:991px) and (min-width:768px){
+   width: 80%;
+   margin-left: auto !important;
+   margin-right: auto !important;
+   margin-top: 30px;
+  //  margin: auto !important;
+  }
+
+   &:hover .h1-h1{
+    color: black !important;
+    font-weight: 700;
+   }
+
+   &:hover .brain-p{
+    color: black !important;
+   }
+
+   &:hover{
+    background-color: #ffbd39;
+   }
+
+    .image{
+   
+        max-width: 100px;
+        margin: auto;
+      
+
+        .brain{
+            height: auto;
+            border-radius: 50%;
+            width: 100%;
+            object-fit: contain;
+            margin: auto;
+            margin-top: 30px;
+             
+          
+        }
+        
+    }
+    .h1-h1{
+        font-size: 22px;
+        text-align: center;
+        color: #ffbd39;
+          margin-top: 16px !important;
+          font-family: 'Poppins';
+          font-weight: 700;
+          transition: 0.5s all ease;
+
+          svg{
+            margin-left: 10px;
+          }
+
+    }
+      .brain-p{
+            color: white !important;
+            padding-inline: 20px;
+            padding-bottom: 20px !important;
+              font-family: 'Poppins';
+            margin: 0;
+            font-size: 15px;
+            text-align: start;
+            transition: 0.5s all ease;
+            
+        }
+}
+
+

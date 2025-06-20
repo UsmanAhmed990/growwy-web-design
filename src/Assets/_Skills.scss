@@ -1,0 +1,156 @@
+
+
+.main-skills{
+    margin-top: 80px;
+}
+.heading-wrapper {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  text-align: center !important;
+  display: flex;
+  justify-content: center;
+}
+
+.span-p2 {
+  font-size: 52px;
+  font-weight: 700;
+  font-family: "Poppins" !important;
+  color: white;
+  line-height: 72px;
+  display: inline-block;   
+  position: relative;   
+  
+  @media screen and (max-width:991px) and (min-width:768px){
+    font-size: 40px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 0;               
+    height: 3px;
+    width: 0;          
+    background: #ffbd39;;
+    transition: width 0.80s ease-out;
+  }
+  &:hover::before {
+    width: 100%;        
+  }
+}
+
+
+//________________________________ code of Skill section ____________________________
+
+
+$yellow: #ffc83d;    
+$bg-dark: #000;        
+$text-light: #fff;  
+$text-muted: #aaa;    
+
+.skills-section {
+  background: $bg-dark;
+  color: $text-light;
+  padding: 6rem 0;
+  padding-bottom: 4rem !important;
+
+  @media (max-width: 767px) and (min-width:320px) {
+      padding: 30px !important;
+      padding-bottom:  0 !important;
+      }
+
+  @media screen and (max-width:991px) and (min-width:768px){
+    padding-bottom: 1rem !important;
+  }
+
+  .title {
+    font-size: 52px;
+    font-weight: 700;
+    font-family: 'Poppins';
+    text-align: center;
+    position: relative;
+    margin-bottom: 6rem;
+
+    @media (max-width: 767px) and (min-width:320px) {
+      margin-bottom: 40px;
+      font-size: 30px;
+      }
+
+    @media screen and (max-width:991px) and (min-width:768px){
+    font-size: 40px;
+    margin-bottom: 3rem !important;
+  }
+
+    &::after {          
+      content: "SKILLS";
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 9rem;
+      font-weight: 900;
+      color: rgba(255, 255, 255, 0.05);
+      pointer-events: none;
+      white-space: nowrap;
+
+      @media (max-width: 767px) and (min-width:320px) {
+      font-size: 5rem !important;
+      }
+    }
+    &::before{
+          content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 0;               
+    height: 3px;
+    width: 0;          
+    background: #ffbd39;;
+    transition: width 0.80s ease-out;
+    }
+     &:hover::before {
+    width: 100%;        
+  }
+  }
+
+  .subtitle {
+    max-width: 700px;
+    margin: 0 auto 3.5rem;
+    text-align: center;
+    color: $text-muted;
+    line-height: 1.6;
+  }
+
+
+  .skill-item {
+    margin-bottom: 2.2rem;
+
+    .label-row {
+      display: flex;
+      justify-content: space-between;
+      font-weight: 500;
+      margin-bottom: 0.35rem;
+    }
+
+    .progress-track {
+      background: #222;
+      height: 10px;
+      border-radius: 4px;
+      overflow: hidden;
+
+      .progress-fill {
+        width: 0;                  
+        height: 100%;
+        background: $yellow;
+        transition: width 1.4s ease-in-out;
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .skills-section .title::after {
+    font-size: 5rem;
+  }
+}
+
+
